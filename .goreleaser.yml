@@ -16,7 +16,6 @@ archive:
   files:
     - LICENSE
     - README.md
-    - CHANGELOG.md
 
 release:
   github:
