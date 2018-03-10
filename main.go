@@ -30,7 +30,6 @@ func main() {
 	}
 }
 
-// HomeDir gets HOME directory
 func homeDir() string {
 	home := os.Getenv("HOME")
 	if runtime.GOOS == "windows" {
