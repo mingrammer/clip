@@ -8,9 +8,7 @@
 </p>
 
 <p align="center">
-
 A simple key-value store for clipboard
-
 </p>
 
 <br><br><br>
