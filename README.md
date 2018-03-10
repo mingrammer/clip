@@ -47,4 +47,4 @@ clip cp <key>
 
 # License
 
-Deatils on [LICENSE](/LICENSE)
+Details on [LICENSE](/LICENSE)
