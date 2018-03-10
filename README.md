@@ -13,6 +13,8 @@ A simple key-value store for clipboard
 
 <br><br><br>
 
+It is a command line tool for simple key-value store for clipboard. I often use frequently used text, especially long texts that are hard to remember, on the clipboard. But it is cumbersome to copy the text manually by using trackpad or mouse. So `clip` was developed to solve this problem.
+
 # Installation
 
 ```bash
