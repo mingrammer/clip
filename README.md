@@ -15,7 +15,7 @@ A simple key-value store for clipboard
 
 It is a command line tool for simple key-value store for clipboard. I often use frequently used text, especially long texts that are hard to remember, on the clipboard. But it is cumbersome to copy the text manually by using trackpad or mouse. So `clip` was developed to solve this problem.
 
-# Installation
+## Installation
 
 ```bash
 go get github.com/mingrammer/clip
@@ -28,7 +28,7 @@ brew tap mingrammer/clip https://github.com/mingrammer/clip.git
 brew install clip
 ```
 
-# Usage
+## Usage
 
 ```bash
 # List all key-value pairs
@@ -47,6 +47,6 @@ clip del <key>
 clip cp <key>
 ```
 
-# License
+## License
 
 Details on [LICENSE](/LICENSE)
