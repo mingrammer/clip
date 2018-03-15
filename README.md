@@ -49,4 +49,4 @@ clip cp <key>
 
 ## License
 
-Details on [LICENSE](/LICENSE)
+MIT
