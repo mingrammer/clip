@@ -37,8 +37,8 @@ func getAll() (map[string]string, error) {
 	if err != nil {
 		return nil, errors.New("Error occurs while retrieving all keys")
 	}
-	if clips == nil {
-		return nil, errors.New("There is no clip data")
+	if len(clips) == 0 {
+		return nil, errors.New("No stored keys")
 	}
 	return clips, err
 }
