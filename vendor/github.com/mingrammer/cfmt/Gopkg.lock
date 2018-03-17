@@ -2,18 +2,6 @@
 
 
 [[projects]]
-  branch = "master"
-  name = "github.com/atotto/clipboard"
-  packages = ["."]
-  revision = "bc5958e1c8339112fc3347a89f3c482f416a69d3"
-
-[[projects]]
-  name = "github.com/coreos/bbolt"
-  packages = ["."]
-  revision = "583e8937c61f1af6513608ccc75c97b6abdf4ff9"
-  version = "v1.3.0"
-
-[[projects]]
   name = "github.com/fatih/color"
   packages = ["."]
   revision = "507f6050b8568533fb3f5504de8e5205fa62a114"
@@ -32,26 +20,14 @@
   version = "v0.0.3"
 
 [[projects]]
-  name = "github.com/mingrammer/cfmt"
-  packages = ["."]
-  revision = "1cf35502de5a8a23668d170067eba75accb0a899"
-  version = "v1.0.0"
-
-[[projects]]
-  name = "github.com/urfave/cli"
-  packages = ["."]
-  revision = "cfb38830724cc34fedffe9a2a29fb54fa9169cd1"
-  version = "v1.20.0"
-
-[[projects]]
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "7dca6fe1f43775aa6d1334576870ff63f978f539"
+  revision = "cc7307a45468e49eaf2997c890f14aa03a26917b"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "ef3545b6649b8818f63c7b0c20269de5614e9871c3c7e0e916ae2ea16b9e4a75"
+  inputs-digest = "2efdc461e66770ea05a192b03f4b41c5c7c45bff53a4b778058d787e01239514"
   solver-name = "gps-cdcl"
   solver-version = 1

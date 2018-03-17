@@ -5,6 +5,8 @@ import (
 
 	"github.com/atotto/clipboard"
 
+	"github.com/mingrammer/cfmt"
+
 	"github.com/urfave/cli"
 )
 
@@ -23,7 +25,7 @@ func buildCommands() []cli.Command {
 			Action: func(c *cli.Context) error {
 				pairs, err := getAll()
 				if err != nil {
-					fmt.Println(err.Error())
+					cfmt.Errorln(err.Error())
 					return nil
 				}
 
@@ -38,13 +40,13 @@ func buildCommands() []cli.Command {
 			Usage: "Get a value of a specific key",
 			Action: func(c *cli.Context) error {
 				if len(c.Args()) < 1 {
-					fmt.Println("You must give a key")
+					cfmt.Warningln("You must give a key")
 					return nil
 				}
 
 				k := c.Args()[0]
 				if v, err := get(k); err != nil {
-					fmt.Println(err.Error())
+					cfmt.Errorln(err.Error())
 				} else {
 					fmt.Println(v)
 				}
@@ -56,15 +58,15 @@ func buildCommands() []cli.Command {
 			Usage: "Set a key-value pair",
 			Action: func(c *cli.Context) error {
 				if len(c.Args()) < 2 {
-					fmt.Println("You must give a key-value pair")
+					cfmt.Warningln("You must give a key-value pair")
 					return nil
 				}
 
 				k, v := c.Args()[0], c.Args()[1]
 				if err := set(k, v); err != nil {
-					fmt.Println(err.Error())
+					cfmt.Errorln(err.Error())
 				} else {
-					fmt.Printf("%s:%s is set\n", k, v)
+					fmt.Printf("%s ) %s\n%s ) %s \n", KeyEmoji, k, BoxEmoji, v)
 				}
 				return nil
 			},
@@ -74,15 +76,15 @@ func buildCommands() []cli.Command {
 			Usage: "Delete a key",
 			Action: func(c *cli.Context) error {
 				if len(c.Args()) < 1 {
-					fmt.Println("You must give a key to delete")
+					cfmt.Warningln("You must give a key to delete")
 					return nil
 				}
 
 				k := c.Args()[0]
 				if err := del(k); err != nil {
-					fmt.Println(err.Error())
+					cfmt.Errorln(err.Error())
 				} else {
-					fmt.Printf("%s is deleted\n", k)
+					fmt.Printf("Key %s was deleted\n", k)
 				}
 				return nil
 			},
@@ -92,16 +94,16 @@ func buildCommands() []cli.Command {
 			Usage: "Copy a value of a specific key to clipboard",
 			Action: func(c *cli.Context) error {
 				if len(c.Args()) < 1 {
-					fmt.Println("You must give a key to copy")
+					cfmt.Warningln("You must give a key to copy")
 					return nil
 				}
 
 				k := c.Args()[0]
 				if v, err := get(k); err != nil {
-					fmt.Println(err.Error())
+					cfmt.Errorln(err.Error())
 				} else {
 					clipboard.WriteAll(string(v))
-					fmt.Printf("%s is copied!\n", v)
+					cfmt.Successf("Copied! %s\n", v)
 				}
 				return nil
 			},
