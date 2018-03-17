@@ -12,7 +12,7 @@ import (
 const (
 	AppName = "clip"
 	Author  = "mingrammer"
-	Version = "0.0.1"
+	Version = "0.0.2"
 	Usage   = "Store and copy the frequently used text to clipboard"
 )
 
