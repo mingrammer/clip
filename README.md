@@ -17,11 +17,15 @@ It is a command line tool for simple key-value store for clipboard. I often use 
 
 ## Installation
 
+### Using go get
+
 ```bash
 go get github.com/mingrammer/clip
 ```
 
-Or using [Homebrew](https://brew.sh)
+It is recommended to also run `dep ensure` to make sure that the dependencies are in the correct versions.
+
+### Using [homebrew](https://brew.sh)
 
 ```bash
 brew tap mingrammer/clip https://github.com/mingrammer/clip.git
