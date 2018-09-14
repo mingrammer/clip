@@ -34,7 +34,7 @@ brew install clip
 
 ## Usage
 
-```bash
+```console
 # List all key-value pairs
 clip list
 
