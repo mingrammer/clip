@@ -28,7 +28,7 @@ It is recommended to also run `dep ensure` to make sure that the dependencies ar
 ### Using [homebrew](https://brew.sh)
 
 ```bash
-brew tap mingrammer/clip https://github.com/mingrammer/clip.git
+brew tap mingrammer/clip
 brew install clip
 ```
 
