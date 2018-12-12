@@ -1,2 +1,6 @@
 # Dependency
 vendor/
+
+# Build & binary
+dist/
+clip
